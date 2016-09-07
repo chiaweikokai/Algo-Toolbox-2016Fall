@@ -12,14 +12,15 @@ assert(len(a) == n)
 
 # print("Naive result: ", result)
 
+
 def find_largest(arr):
-	res = 0
-	index = 0
-	for i in range(0, len(a)):
-		if arr[i] > res:
-			res = arr[i]
-			index = i
-	return res, index
+    res = 0
+    index = 0
+    for i in range(0, len(a)):
+        if arr[i] > res:
+            res = arr[i]
+            index = i
+    return res, index
 
 num1, index1 = find_largest(a)
 a.pop(index1)
